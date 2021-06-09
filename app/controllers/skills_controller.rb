@@ -1,6 +1,6 @@
 class SkillsController < ApplicationController
     def index
-        skills = Skills.all
+        skills = Skill.all
         render json: skills
     end
 
@@ -17,7 +17,7 @@ class SkillsController < ApplicationController
         skill = Skill.find(params[:id])
         skill.destroy
     end
-    
+
     private
 
     def skill_params
