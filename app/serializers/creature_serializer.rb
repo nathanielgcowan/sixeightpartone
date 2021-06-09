@@ -1,4 +1,4 @@
 class CreatureSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name, :image, :description
 end
